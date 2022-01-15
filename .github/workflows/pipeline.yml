@@ -33,3 +33,4 @@ jobs:
           heroku_app_name: 'pokedex-1234'
           heroku_email: 'ipwnjianrong@gmail.com'
           healthcheck: 'https://pokedex-1234.herokuapp.com/health'
+          checkstring: 'ok'
