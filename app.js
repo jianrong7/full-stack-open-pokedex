@@ -11,6 +11,10 @@ app.get('/hello', (req, res) => {
   res.send('world')
 })
 
+app.get('/bye', (req, res) => {
+  res.send('world')
+})
+
 app.get('/health', (req, res) => {
   res.send('ok')
 })
