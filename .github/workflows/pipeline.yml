@@ -40,10 +40,12 @@ jobs:
           healthcheck: 'https://pokedex-1234.herokuapp.com/health'
           checkstring: 'ok'
           rollbackonhealthcheckfailed: true
+  tagging:
+    runs-on: ubuntu-18.04
+    steps:
       - name: Bump version and push tag
         if: ${{ github.event_name == 'push' }}
         uses: anothrNick/github-tag-action@1.33.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: 'patch'
-          # DRY_RUN: true
