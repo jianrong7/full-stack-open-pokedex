@@ -32,5 +32,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: 'pokedex-1234'
           heroku_email: 'ipwnjianrong@gmail.com'
+          procfile: 'web: npm start-prod'
           healthcheck: 'https://pokedex-1234.herokuapp.com/health'
           checkstring: 'ok'
